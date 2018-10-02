@@ -49,6 +49,38 @@ func (suite *Suite) TestRandomCellPhone() {
 			locale: "ee",
 			expect: "562 0604",
 		},
+		{
+			locale: "en-au-ocker",
+			expect: "8484-358-782",
+		},
+		{
+			locale: "en-AU",
+			expect: "8432 166 341",
+		},
+		{
+			locale: "en-BORK",
+			expect: "(768) 663-1402",
+		},
+		{
+			locale: "en-GB",
+			expect: "57977 735273",
+		},
+		{
+			locale: "en-IND",
+			expect: "(244) 105-0722",
+		},
+		{
+			locale: "en-MS",
+			expect: "1-655-054-7053",
+		},
+		{
+			locale: "en-NEP",
+			expect: "665-820-0152",
+		},
+		{
+			locale: "en-NG",
+			expect: "1-822-531-2753",
+		},
 	}
 
 	for i, test := range tests {
@@ -101,6 +133,38 @@ func (suite *Suite) TestRandomPhoneNumber() {
 		{
 			locale: "ee",
 			expect: "758 7823",
+		},
+		{
+			locale: "en-au-ocker",
+			expect: "23 2166 3418",
+		},
+		{
+			locale: "en-AU",
+			expect: "686.631.4025",
+		},
+		{
+			locale: "en-BORK",
+			expect: "773-527-3382 x44105",
+		},
+		{
+			locale: "en-GB",
+			expect: "4117 228 6550",
+		},
+		{
+			locale: "en-IND",
+			expect: "+917053806582",
+		},
+		{
+			locale: "en-MS",
+			expect: "+60101523282",
+		},
+		{
+			locale: "en-NEP",
+			expect: "+97753127530",
+		},
+		{
+			locale: "en-NG",
+			expect: "49081067663",
 		},
 	}
 

@@ -15,7 +15,6 @@ func NewBundle() *Bundle {
 	}
 
 	bootBackends(bundle)
-
 	bundle.SetLocale("en")
 
 	return bundle
@@ -43,6 +42,10 @@ func bootBackends(bundle *Bundle) {
 	for locale := range files {
 		bundle.locales = append(bundle.locales, locale)
 	}
+}
+
+func currentBackend() *Backend {
+	return bundle.currentBackend
 }
 
 // Bundle support data
@@ -78,8 +81,4 @@ func (b *Bundle) SetLocale(locale string) *Bundle {
 	}
 
 	return b
-}
-
-func currentBackend() *Backend {
-	return bundle.currentBackend
 }
