@@ -1,0 +1,10 @@
+fake_phone:
+  phone_number:
+    formats:
+      - '## ## ## ##'
+      - '##-##-##-##'
+  cell_phone:
+    formats:
+      - '20 ## ## ##'
+      - '30 ## ## ##'
+      - '40 ## ## ##'
