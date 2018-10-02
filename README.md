@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ZhaoLion/faker.svg?branch=master)](https://travis-ci.org/ZhaoLion/faker)
+
 # faker
 
 faker(inspired by ruby gem faker) is a useful tool for generating data. 
