@@ -20,6 +20,10 @@ func TestRandomCellPhone(t *testing.T) {
 			locale: "zh-CN",
 			expect: "17168514670",
 		},
+		{
+			locale: "bg",
+			expect: "1870467117",
+		},
 	}
 
 	for i, test := range tests {
@@ -35,11 +39,15 @@ func TestRandomPhoneNumber(t *testing.T) {
 	}{
 		{
 			locale: "en",
-			expect: "346-711-7084",
+			expect: "487.227.3851",
+		},
+		{
+			locale: "bg",
+			expect: "312.342.3336",
 		},
 		{
 			locale: "zh-CN",
-			expect: "2273-85170123",
+			expect: "24654634761",
 		},
 	}
 

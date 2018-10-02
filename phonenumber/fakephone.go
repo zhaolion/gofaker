@@ -8,10 +8,10 @@ import (
 type FakePhone struct {
 	PhoneNumber struct {
 		Formats []string
-	} `yaml:"phone_number"`
+	} `yaml:"phone_number,flow"`
 	CellPhone struct {
 		Formats []string
-	} `yaml:"cell_phone"`
+	} `yaml:"cell_phone,flow"`
 }
 
 // RandomPhoneNumber return random format phone number
