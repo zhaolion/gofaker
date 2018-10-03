@@ -101,6 +101,98 @@ func (suite *Suite) TestRandomCellPhone() {
 			locale: "en-ZA",
 			expect: "681 226 0108",
 		},
+		{
+			locale: "es",
+			expect: "610873768",
+		},
+		{
+			locale: "fa",
+			expect: "1-638-645-2100",
+		},
+		{
+			locale: "fi-FI",
+			expect: "170-5777503",
+		},
+		{
+			locale: "fr-CH",
+			expect: "+41.8025.070354",
+		},
+		{
+			locale: "fr",
+			expect: "+33 613244425",
+		},
+		{
+			locale: "he",
+			expect: "845-383-6848",
+		},
+		{
+			locale: "id",
+			expect: "(211) 583-8065",
+		},
+		{
+			locale: "it",
+			expect: "327-307-4687",
+		},
+		{
+			locale: "ja",
+			expect: "680-6111-5572",
+		},
+		{
+			locale: "ko",
+			expect: "601-270-0711",
+		},
+		{
+			locale: "iv",
+			expect: "568-818-0426",
+		},
+		{
+			locale: "nb-NO",
+			expect: "40865345",
+		},
+		{
+			locale: "nl",
+			expect: "1-151-365-3148",
+		},
+		{
+			locale: "no",
+			expect: "233.154.4031",
+		},
+		{
+			locale: "pl",
+			expect: "79-587-00-78",
+		},
+		{
+			locale: "pt",
+			expect: "(880) 060-4267",
+		},
+		{
+			locale: "ru",
+			expect: "1-711-502-5463",
+		},
+		{
+			locale: "sk",
+			expect: "650.638.0072",
+		},
+		{
+			locale: "sv",
+			expect: "476-306-7140",
+		},
+		{
+			locale: "tr",
+			expect: "240-563-4276",
+		},
+		{
+			locale: "uk",
+			expect: "(092) 867-85-50",
+		},
+		{
+			locale: "vi",
+			expect: "8186 236 8615",
+		},
+		{
+			locale: "zh-TW",
+			expect: "(533) 317-8856",
+		},
 	}
 
 	for i, test := range tests {
@@ -205,6 +297,98 @@ func (suite *Suite) TestRandomPhoneNumber() {
 		{
 			locale: "en-ZA",
 			expect: "+2728 821 0873",
+		},
+		{
+			locale: "es",
+			expect: "968463864",
+		},
+		{
+			locale: "fa",
+			expect: "210.070.5777 x50360",
+		},
+		{
+			locale: "fi-FI",
+			expect: "825-0703543",
+		},
+		{
+			locale: "fr-CH",
+			expect: "51 24 44 25 45",
+		},
+		{
+			locale: "fr",
+			expect: "23 36 84 80 82",
+		},
+		{
+			locale: "he",
+			expect: "51-583-8065",
+		},
+		{
+			locale: "id",
+			expect: "282730746877",
+		},
+		{
+			locale: "it",
+			expect: "+11 557 28360127",
+		},
+		{
+			locale: "ja",
+			expect: "30-7114-5688",
+		},
+		{
+			locale: "ko",
+			expect: "204-2654-0865",
+		},
+		{
+			locale: "iv",
+			expect: "452-151-3653",
+		},
+		{
+			locale: "nb-NO",
+			expect: "842 33 154",
+		},
+		{
+			locale: "nl",
+			expect: "(0311) 587007",
+		},
+		{
+			locale: "no",
+			expect: "188-006-0426 x7271",
+		},
+		{
+			locale: "pl",
+			expect: "23-502-54-63",
+		},
+		{
+			locale: "pt",
+			expect: "(65) 063-8007",
+		},
+		{
+			locale: "ru",
+			expect: "+7(924)306-71-40",
+		},
+		{
+			locale: "sk",
+			expect: "+421 024 056 342",
+		},
+		{
+			locale: "sv",
+			expect: "6586-785503",
+		},
+		{
+			locale: "tr",
+			expect: "903686153453",
+		},
+		{
+			locale: "uk",
+			expect: "(050) 317-88-56",
+		},
+		{
+			locale: "vi",
+			expect: "2914 472 2238",
+		},
+		{
+			locale: "zh-TW",
+			expect: "2678-74431566",
 		},
 	}
 
