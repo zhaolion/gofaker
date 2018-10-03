@@ -157,6 +157,10 @@ func (suite *Suite) TestRandomCellPhone() {
 			locale: "no",
 			expect: "233.154.4031",
 		},
+		{
+			locale: "pl",
+			expect: "79-587-00-78",
+		},
 	}
 
 	for i, test := range tests {
@@ -317,6 +321,10 @@ func (suite *Suite) TestRandomPhoneNumber() {
 		{
 			locale: "no",
 			expect: "188-006-0426 x7271",
+		},
+		{
+			locale: "pl",
+			expect: "23-502-54-63",
 		},
 	}
 
