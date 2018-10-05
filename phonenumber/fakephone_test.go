@@ -49,7 +49,6 @@ func TestFakePhone(t *testing.T) {
 	phone.AreaCodes = []string{"201"}
 	phone.ExchangeCodes = []string{"202"}
 	phone.CountryCodes = []string{"+1"}
-
 	phone.PhoneNumber.Formats = []string{"{{AreaCode}}"}
 	assert.Equal(t, "201", phone.RandomPhoneNumber())
 	phone.PhoneNumber.Formats = []string{"({{CountryCode}})-{{AreaCode}}"}
@@ -67,4 +66,5 @@ func TestFakePhone(t *testing.T) {
 	assert.Equal(t, "33", phone.LadaDos())
 	phone.PhoneNumber.Formats = []string{"({{LadaTres}})-{{LadaDos}}-{{Extension}}"}
 	assert.Equal(t, "(223)-55-0580", phone.RandomPhoneNumber())
+	assert.Equal(t, "43", phone.FixedSubscriberNumber(2))
 }
