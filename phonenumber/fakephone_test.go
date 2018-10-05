@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/ZhaoLion/faker/random"
-
+	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
 )
 
@@ -21,6 +21,9 @@ cell_phone:
     - '(###) ###-####'
     - '1-###-###-####'
     - '###.###.####'
+area_code: ["201", "202", "203"]
+exchange_code: ["201", "202", "203"]
+country_code: ["+1", "+2", "+3"]
 `)
 
 func TestFakePhone(t *testing.T) {
@@ -32,10 +35,12 @@ func TestFakePhone(t *testing.T) {
 		t.Fatalf("new FakePhone err: %s", err)
 	}
 
-	if phone.RandomPhoneNumber() != "1-163-061-5813" {
-		t.Error("RandomPhoneNumber() should return \"1-163-061-5813\"")
-	}
-	if phone.RandomCellPhone() != "1-872-123-7517" {
-		t.Error("RandomPhoneNumber() should return \"1-872-123-7517\"")
-	}
+	assert.Equal(t, 3, len(phone.AreaCodes))
+	assert.Equal(t, 3, len(phone.ExchangeCodes))
+	assert.Equal(t, 3, len(phone.CountryCodes))
+	assert.Equal(t, "1-163-061-5813", phone.RandomPhoneNumber())
+	assert.Equal(t, "1-872-123-7517", phone.RandomCellPhone())
+	assert.Equal(t, "203", phone.AreaCode())
+	assert.Equal(t, "202", phone.ExchangeCode())
+	assert.Equal(t, "+3", phone.CountryCode())
 }
