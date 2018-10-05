@@ -1,8 +1,8 @@
 package phonenumber
 
 import (
-	"github.com/ZhaoLion/faker/random"
 	"github.com/hoisie/mustache"
+	"github.com/zhaolion/faker/random"
 )
 
 // FakePhone a random phone

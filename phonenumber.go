@@ -1,6 +1,6 @@
 package faker
 
-import "github.com/ZhaoLion/faker/phonenumber"
+import "github.com/zhaolion/faker/phonenumber"
 
 // RandomCellPhone random format cell phone
 func RandomCellPhone() string {

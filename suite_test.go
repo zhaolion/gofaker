@@ -3,7 +3,7 @@ package faker
 import (
 	"testing"
 
-	"github.com/ZhaoLion/faker/random"
+	"github.com/zhaolion/faker/random"
 	"github.com/stretchr/testify/suite"
 )
 

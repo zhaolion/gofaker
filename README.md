@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ZhaoLion/faker.svg?branch=master)](https://travis-ci.org/ZhaoLion/faker)[![GoDoc](https://godoc.org/github.com/ZhaoLion/faker?status.svg)](https://godoc.org/github.com/ZhaoLion/faker)
+[![Build Status](https://travis-ci.org/zhaolion/faker.svg?branch=master)](https://travis-ci.org/ZhaoLion/faker)[![GoDoc](https://godoc.org/github.com/zhaolion/faker?status.svg)](https://godoc.org/github.com/zhaolion/faker)
 # faker
 
 faker(inspired by ruby gem faker) is a useful tool for generating data. 
