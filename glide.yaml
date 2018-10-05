@@ -4,3 +4,5 @@ import:
   version: ^2.2.1
 - package: github.com/stretchr/testify
   version: ^1.2.2
+- package: github.com/hoisie/mustache
+  version: 6375acf62c69d9d3ad20fd0599d82ca94ea12284
