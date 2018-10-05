@@ -3,6 +3,11 @@
 
 faker(inspired by ruby gem faker) is a useful tool for generating data. 
 
+## Usages
+- [Alphanumeric](doc/alphanumeric.md)
+- [PhoneNumber](doc/phone_number.md)
+
+
 ## Installation
 `go get github.com/ZhaoLion/faker`
 
