@@ -31,11 +31,13 @@ func (p *FakePhone) RandomCellPhone() string {
 }
 
 // AreaCode random AreaCode
+// US and Canada only
 func (p *FakePhone) AreaCode() string {
 	return random.PickString(p.AreaCodes)
 }
 
 // ExchangeCode random ExchangeCode
+// US and Canada only
 func (p *FakePhone) ExchangeCode() string {
 	return random.PickString(p.ExchangeCodes)
 }
@@ -43,4 +45,17 @@ func (p *FakePhone) ExchangeCode() string {
 // CountryCode random CountryCode
 func (p *FakePhone) CountryCode() string {
 	return random.PickString(p.CountryCodes)
+}
+
+// Extension alias of SubscriberNumber
+func (p *FakePhone) Extension() string {
+	return p.SubscriberNumber()
+}
+
+// SubscriberNumber random 4bit number
+// US and Canada only
+// Can be used for both extensions and last four digits of phone number.
+// Since extensions can be of variable length, this method takes a length parameter
+func (p *FakePhone) SubscriberNumber() string {
+	return random.FixedNumberString(4)
 }
