@@ -13,7 +13,7 @@ support format TBD list:
 - [*] en
 - [*] en-AU
 - [*] en-BORK
-- [] en-CA
+- [*] en-CA
 - [*] en-GB
 - [*] en-IND
 - [*] en-MS
@@ -23,15 +23,15 @@ support format TBD list:
 - [*] en-PAK
 - [*] en-SG
 - [*] en-UG
-- [] en-US
+- [*] en-US
 - [*] en-ZA
 - [*] en-au-ocker
 - [*] en
-- [] es-MX
+- [*] es-MX
 - [*] es
 - [*] fa
 - [*] fi-FI
-- [] fr-CA
+- [*] fr-CA
 - [*] fr-CH
 - [*] fr
 - [*] he
@@ -44,7 +44,7 @@ support format TBD list:
 - [*] nl
 - [*] no
 - [*] pl
-- [] pt-BR
+- [*] pt-BR
 - [*] pt
 - [*] ru
 - [*] sk

@@ -1,10 +1,14 @@
-hash: 9a1f8f9ba05fbf45e0b08621198374f2f0856a8fe21167d704a0b57d853b85f7
-updated: 2018-10-02T14:30:07.01131881+08:00
+hash: fa19491304028b4c32a9d7acc961a09cfa61a580544a35e69f40c687cd1c92df
+updated: 2018-10-05T20:32:51.467574449+08:00
 imports:
+- name: github.com/hoisie/mustache
+  version: 6375acf62c69d9d3ad20fd0599d82ca94ea12284
 - name: github.com/stretchr/testify
   version: f35b8ab0b5a2cef36673838d662e249dd9c94686
   subpackages:
   - assert
+  - require
+  - suite
 - name: gopkg.in/yaml.v2
   version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
 testImports:
