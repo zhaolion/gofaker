@@ -22,7 +22,7 @@ func (fn *FakeName) MaleFirstName() string {
 	return random.PickString(fn.MaleFirstNames)
 }
 
-// FemaleFirstNames female first name
+// FemaleFirstName female first name
 func (fn *FakeName) FemaleFirstName() string {
 	return random.PickString(fn.FemaleFirstNames)
 }

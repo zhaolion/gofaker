@@ -41,7 +41,6 @@ faker.Phone().Extention() => "3764"
 
 ## support locales
 
-support format TBD list:
 - bg
 - ca-CAT
 - ca

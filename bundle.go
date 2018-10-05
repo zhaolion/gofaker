@@ -1,9 +1,9 @@
 package faker
 
 import (
-	"sync"
-	"log"
 	"fmt"
+	"log"
+	"sync"
 )
 
 var bundle = NewBundle()
@@ -46,10 +46,20 @@ func bootBackends(bundle *Bundle) {
 	for locale := range files {
 		bundle.locales = append(bundle.locales, locale)
 	}
+
+	bundle.defaultBackend = bundle.backends["en"]
 }
 
 func currentBackend() *Backend {
+	if bundle.currentBackend == nil {
+		return defaultBackend()
+	}
+
 	return bundle.currentBackend
+}
+
+func defaultBackend() *Backend {
+	return bundle.defaultBackend
 }
 
 // Bundle support data
@@ -58,6 +68,7 @@ type Bundle struct {
 	locales        []string
 	currentLocale  string
 	currentBackend *Backend
+	defaultBackend *Backend
 	backends       map[string]*Backend
 	lock           *sync.RWMutex
 }
@@ -66,6 +77,12 @@ func (b Bundle) setBackend(name string, backend *Backend) {
 	b.lock.Lock()
 	b.backends[name] = backend
 	b.lock.Unlock()
+}
+
+func (b Bundle) setDefaultBackend(locale string) {
+	if backend, ok := b.backends[locale]; ok {
+		b.defaultBackend = backend
+	}
 }
 
 // SetLocale current locale and backend

@@ -5,6 +5,7 @@ faker(inspired by ruby gem faker) is a useful tool for generating data.
 
 ## Usages
 - [Alphanumeric](doc/alphanumeric.md)
+- [Name](doc/name.md)
 - [PhoneNumber](doc/phone_number.md)
 
 
