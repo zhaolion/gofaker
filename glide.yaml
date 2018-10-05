@@ -1,4 +1,4 @@
-package: git.llsapp.com/lion.zhao/faker
+package: github.com/zhaolion/faker
 import:
 - package: gopkg.in/yaml.v2
   version: ^2.2.1

@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/ZhaoLion/faker/phonenumber"
+	"github.com/zhaolion/faker/phonenumber"
 	"gopkg.in/yaml.v2"
 )
 

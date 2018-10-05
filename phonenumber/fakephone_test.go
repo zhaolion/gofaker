@@ -3,7 +3,7 @@ package phonenumber
 import (
 	"testing"
 
-	"github.com/ZhaoLion/faker/random"
+	"github.com/zhaolion/faker/random"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v2"
 )
