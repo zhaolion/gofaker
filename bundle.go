@@ -2,6 +2,8 @@ package faker
 
 import (
 	"sync"
+	"log"
+	"fmt"
 )
 
 var bundle = NewBundle()
@@ -33,6 +35,8 @@ func bootBackends(bundle *Bundle) {
 			backend, err := NewBackend(path)
 			if err == nil {
 				bundle.setBackend(name, backend)
+			} else {
+				log.Println(fmt.Sprintf("load backend[%s] err: %s", name, err))
 			}
 		}(name, path, bundle)
 	}
