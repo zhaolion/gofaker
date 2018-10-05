@@ -31,3 +31,11 @@ func replaceNumberWithPound(str string) string {
 
 	return string(bytestr)
 }
+
+func fixedString(l uint, source string) string {
+	s := make([]byte, l)
+	for i := 0; i < int(l); i++ {
+		s[i] = source[rand.Intn(len(source))]
+	}
+	return string(s)
+}

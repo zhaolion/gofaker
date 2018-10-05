@@ -15,9 +15,9 @@ type FakePhone struct {
 	} `yaml:"cell_phone,flow"`
 	AreaCodes     []string `yaml:"area_code,flow"`
 	ExchangeCodes []string `yaml:"exchange_code,flow"`
-	CountryCodes   []string `yaml:"country_code,flow"`
-	LadaDoses []string `yaml:"lada_dos,flow"`
-	LadaTress []string `yaml:"lada_tres,flow"`
+	CountryCodes  []string `yaml:"country_code,flow"`
+	LadaDoses     []string `yaml:"lada_dos,flow"`
+	LadaTress     []string `yaml:"lada_tres,flow"`
 }
 
 // RandomPhoneNumber return random format phone number
@@ -59,7 +59,15 @@ func (p *FakePhone) Extension() string {
 // Can be used for both extensions and last four digits of phone number.
 // Since extensions can be of variable length, this method takes a length parameter
 func (p *FakePhone) SubscriberNumber() string {
-	return random.FixedNumberString(4)
+	return random.FixedNumeric(4)
+}
+
+// FixedSubscriberNumber random number with fixed length
+// US and Canada only
+// Can be used for both extensions and last four digits of phone number.
+// Since extensions can be of variable length, this method takes a length parameter
+func (p *FakePhone) FixedSubscriberNumber(l uint) string {
+	return random.FixedNumeric(l)
 }
 
 // LadaDos random lada_dos only for en-MX

@@ -437,3 +437,11 @@ func (suite *Suite) TestRandomPhoneNumber() {
 		suite.Equal(test.expect, RandomPhoneNumber(), fmt.Sprintf("case: %d", i))
 	}
 }
+
+func (suite *Suite) TestPhone() {
+	bundle.SetLocale("en-US")
+	suite.Equal("276", Phone().AreaCode())
+	suite.Equal("229", Phone().ExchangeCode())
+	suite.Equal("0881", Phone().SubscriberNumber())
+	suite.Equal("3645", Phone().Extension())
+}
