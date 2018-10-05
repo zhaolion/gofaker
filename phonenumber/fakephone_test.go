@@ -24,6 +24,8 @@ cell_phone:
 area_code: ["201", "202", "203"]
 exchange_code: ["201", "202", "203"]
 country_code: ["+1", "+2", "+3"]
+lada_dos: ["33", "55"]
+lada_tres: ["222", "223"]
 `)
 
 func TestFakePhone(t *testing.T) {
@@ -58,4 +60,11 @@ func TestFakePhone(t *testing.T) {
 	assert.Equal(t, "(+1)-201-202-0031", phone.RandomPhoneNumber())
 	phone.PhoneNumber.Formats = []string{"({{CountryCode}})-{{SubscriberNumber}}-{{Extension}}"}
 	assert.Equal(t, "(+1)-4496-5796", phone.RandomPhoneNumber())
+
+	assert.Equal(t, 2, len(phone.LadaTress))
+	assert.Equal(t, 2, len(phone.LadaDoses))
+	assert.Equal(t, "222", phone.LadaTres())
+	assert.Equal(t, "33", phone.LadaDos())
+	phone.PhoneNumber.Formats = []string{"({{LadaTres}})-{{LadaDos}}-{{Extension}}"}
+	assert.Equal(t, "(223)-55-0580", phone.RandomPhoneNumber())
 }

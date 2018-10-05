@@ -16,6 +16,8 @@ type FakePhone struct {
 	AreaCodes     []string `yaml:"area_code,flow"`
 	ExchangeCodes []string `yaml:"exchange_code,flow"`
 	CountryCodes   []string `yaml:"country_code,flow"`
+	LadaDoses []string `yaml:"lada_dos,flow"`
+	LadaTress []string `yaml:"lada_tres,flow"`
 }
 
 // RandomPhoneNumber return random format phone number
@@ -58,4 +60,14 @@ func (p *FakePhone) Extension() string {
 // Since extensions can be of variable length, this method takes a length parameter
 func (p *FakePhone) SubscriberNumber() string {
 	return random.FixedNumberString(4)
+}
+
+// LadaDos random lada_dos only for en-MX
+func (p *FakePhone) LadaDos() string {
+	return random.PickString(p.LadaDoses)
+}
+
+// LadaTres random lada_tres only for en-MX
+func (p *FakePhone) LadaTres() string {
+	return random.PickString(p.LadaTress)
 }
