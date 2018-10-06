@@ -21,3 +21,75 @@ func Name() string {
 
 	return FakeName().Name()
 }
+
+// NameWithMiddle name with middle
+func NameWithMiddle() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().NameWithMiddle()
+}
+
+// FirstName first name
+func FirstName() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().FirstName()
+}
+
+// MiddleName middle name
+func MiddleName() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().MiddleName()
+}
+
+// LastName last name
+func LastName() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().LastName()
+}
+
+// Prefix prefix of name
+func Prefix() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().Prefix()
+}
+
+// Suffix suffix of name
+func Suffix() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().Suffix()
+}
+
+// MaleFirstName male first name
+func MaleFirstName() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().MaleFirstName()
+}
+
+// FemaleFirstName female first name
+func FemaleFirstName() string {
+	if FakeName() == nil {
+		return ""
+	}
+
+	return FakeName().FemaleFirstName()
+}

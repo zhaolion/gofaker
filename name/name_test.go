@@ -12,12 +12,20 @@ import (
 
 var bytes = []byte(`
 male_first_name: [Aaron, Abdul, Abe, Abel]
+male_middle_name: [Aaron, Abdul, Abe, Abel]
+male_last_name: [Aaron, Abdul, Abe, Abel]
 female_first_name: [Abbey, Abbie, Abby]
+female_middle_name: [Abbey, Abbie, Abby]
+female_last_name: [Abbey, Abbie, Abby]
 first_name:
   - "{{FemaleFirstName}}"
 last_name: [Abbott, Abernathy, Abshire]
 prefix: [Mr., Mrs., Ms., Miss, Dr.]
+male_prefix: [Mr., Mrs., Ms., Miss, Dr.]
+female_prefix: [Mr., Mrs., Ms., Miss, Dr.]
 suffix: [Jr., Sr., I, II, III, IV, V, MD, DDS, PhD, DVM]
+nobility_title_prefix: [zu, von, vom, von der]
+nobility_title: [Baron, Baronin, Freiherr, Freiherrin, Graf, Gräfin]
 name:
   - "{{Prefix}} {{FirstName}} {{LastName}} {{Suffix}}"
 name_with_middle:
@@ -44,4 +52,13 @@ func TestFakeNameFuncs(t *testing.T) {
 	assert.Equal(t, "Abbie", fakeName.FirstName())
 	assert.Equal(t, "Mrs. Abbie Abshire DDS", fakeName.Name())
 	assert.Equal(t, "Mr. Abby Abernathy Abbott", fakeName.NameWithMiddle())
+	assert.Equal(t, "Abshire", fakeName.MiddleName())
+	assert.Equal(t, "Abe", fakeName.MaleMiddleName())
+	assert.Equal(t, "Abel", fakeName.MaleLastName())
+	assert.Equal(t, "Abbie", fakeName.FemaleMiddleName())
+	assert.Equal(t, "Abbey", fakeName.FemaleLastName())
+	assert.Equal(t, "Mr.", fakeName.MalePrefix())
+	assert.Equal(t, "Miss", fakeName.FemalePrefix())
+	assert.Equal(t, "zu", fakeName.NobilityTitlePrefix())
+	assert.Equal(t, "NobilityTitle", fakeName.NobilityTitle())
 }
