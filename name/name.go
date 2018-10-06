@@ -22,6 +22,7 @@ type FakeName struct {
 	Names                []string `yaml:"name,flow"`
 	NameWithMiddles      []string `yaml:"name_with_middle,flow"`
 	NobilityTitlePrefixs []string `yaml:"nobility_title_prefix,flow"`
+	NobilityTitles       []string `yaml:"nobility_title,flow"`
 }
 
 // MaleFirstName male first name
@@ -106,4 +107,9 @@ func (fn *FakeName) NameWithMiddle() string {
 // NobilityTitlePrefix  nobility_title_prefix
 func (fn *FakeName) NobilityTitlePrefix() string {
 	return random.PickString(fn.NobilityTitlePrefixs)
+}
+
+// NobilityTitle  nobility_title
+func (fn *FakeName) NobilityTitle() string {
+	return random.PickString(fn.NobilityTitles)
 }
