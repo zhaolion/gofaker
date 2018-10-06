@@ -1,8 +1,14 @@
-hash: 5cca2e2b6c7bb876c35efd024775d7b362f5be56c9ed5e773f51be7b8b3a9a85
-updated: 2018-10-06T00:18:27.488077957+08:00
+hash: 8d9eaf0965927fd8abe02db113d4213a8480bf6beb04c05356726a0b54205812
+updated: 2018-10-06T19:49:53.264879274+08:00
 imports:
+- name: github.com/davecgh/go-spew
+  version: 346938d642f2ec3594ed81d874461961cd0faa76
+  subpackages:
+  - spew
 - name: github.com/hoisie/mustache
   version: 6375acf62c69d9d3ad20fd0599d82ca94ea12284
+- name: github.com/jinzhu/copier
+  version: 7e38e58719c33e0d44d585c4ab477a30f8cb82dd
 - name: github.com/stretchr/testify
   version: f35b8ab0b5a2cef36673838d662e249dd9c94686
   subpackages:
@@ -12,10 +18,6 @@ imports:
 - name: gopkg.in/yaml.v2
   version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
 testImports:
-- name: github.com/davecgh/go-spew
-  version: 346938d642f2ec3594ed81d874461961cd0faa76
-  subpackages:
-  - spew
 - name: github.com/pmezard/go-difflib
   version: 792786c7400a136282c1664665ae0a8db921c6c2
   subpackages:

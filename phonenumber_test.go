@@ -2,6 +2,8 @@ package faker
 
 import (
 	"fmt"
+
+	"github.com/zhaolion/faker/random"
 )
 
 func (suite *Suite) TestRandomCellPhone() {
@@ -15,209 +17,210 @@ func (suite *Suite) TestRandomCellPhone() {
 		},
 		{
 			locale: "zh-CN",
-			expect: "17168514670",
+			expect: "15116845420",
 		},
 		{
 			locale: "bg",
-			expect: "1870467117",
+			expect: "0871684542",
 		},
 		{
 			locale: "ca-CAT",
-			expect: "648722738",
+			expect: "616.845.420",
 		},
 		{
 			locale: "ca",
-			expect: "(170) 123-4233",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "da-DK",
-			expect: "20 66 22 46",
+			expect: "30 16 84 54",
 		},
 		{
 			locale: "de-AT",
-			expect: "+43-646-3476133",
+			expect: "0616-84542055",
 		},
 		{
 			locale: "de-CH",
-			expect: "683-280-3530",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "de",
-			expect: "+49-170-3655675",
+			expect: "+49-161-6845420",
 		},
 		{
 			locale: "ee",
-			expect: "562 0604",
+			expect: "516 8454",
 		},
 		{
 			locale: "en-au-ocker",
-			expect: "8484-358-782",
+			expect: "0416-845-420",
 		},
 		{
 			locale: "en-AU",
-			expect: "8432 166 341",
+			expect: "0416-845-420",
 		},
 		{
 			locale: "en-BORK",
-			expect: "(768) 663-1402",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-GB",
-			expect: "57977 735273",
+			expect: "07516 845420",
 		},
 		{
 			locale: "en-IND",
-			expect: "(244) 105-0722",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-MS",
-			expect: "1-655-054-7053",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-NEP",
-			expect: "665-820-0152",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-NG",
-			expect: "1-822-531-2753",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-NZ",
-			expect: "4258 106 766",
+			expect: "0216 845 420",
 		},
 		{
 			locale: "en-PAK",
-			expect: "741.474.1466",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-SG",
-			expect: "1-565-457-5560",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-UG",
-			expect: "7 747 872 553",
+			expect: "256 781 684 542",
 		},
 		{
 			locale: "en-ZA",
-			expect: "681 226 0108",
+			expect: "072 168 4542",
 		},
 		{
 			locale: "es",
-			expect: "610873768",
+			expect: "616.845.420",
 		},
 		{
 			locale: "fa",
-			expect: "1-638-645-2100",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "fi-FI",
-			expect: "170-5777503",
+			expect: "041-6845420",
 		},
 		{
 			locale: "fr-CH",
-			expect: "+41.8025.070354",
+			expect: "+41.1684.542055",
 		},
 		{
 			locale: "fr",
-			expect: "+33 613244425",
+			expect: "07 16 84 54 20",
 		},
 		{
 			locale: "he",
-			expect: "845-383-6848",
+			expect: "041-684-5420",
 		},
 		{
 			locale: "id",
-			expect: "(211) 583-8065",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "it",
-			expect: "327-307-4687",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "ja",
-			expect: "680-6111-5572",
+			expect: "080-1684-5420",
 		},
 		{
 			locale: "ko",
-			expect: "601-270-0711",
+			expect: "(168) 454-2055",
 		},
 		{
-			locale: "iv",
-			expect: "568-818-0426",
+			locale: "lv",
+			expect: "241 684 542",
 		},
 		{
 			locale: "nb-NO",
-			expect: "40865345",
+			expect: "16 84 54 20",
 		},
 		{
 			locale: "nl",
-			expect: "1-151-365-3148",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "no",
-			expect: "233.154.4031",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "pl",
-			expect: "79-587-00-78",
+			expect: "51-168-45-42",
 		},
 		{
 			locale: "pt",
-			expect: "(880) 060-4267",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "ru",
-			expect: "1-711-502-5463",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "sk",
-			expect: "650.638.0072",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "sv",
-			expect: "476-306-7140",
+			expect: "076-168-4542",
 		},
 		{
 			locale: "tr",
-			expect: "240-563-4276",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "uk",
-			expect: "(092) 867-85-50",
+			expect: "(097) 168-45-42",
 		},
 		{
 			locale: "vi",
-			expect: "8186 236 8615",
+			expect: "0167 168 4542",
 		},
 		{
 			locale: "zh-TW",
-			expect: "(533) 317-8856",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-CA",
-			expect: "(144) 722-2381",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-US",
-			expect: "518.734.6775",
+			expect: "(226) 614-8813",
 		},
 		{
 			locale: "en-MX",
-			expect: "644 247 156 6020",
+			expect: "433 684 5420",
 		},
 		{
 			locale: "fr-CA",
-			expect: "(122) 041-6741",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "pt-BR",
-			expect: "(92) 98576-5803",
+			expect: "(64) 91088-1364",
 		},
 	}
 
-	for i, test := range tests {
+	for _, test := range tests {
+		random.Seed(1000)
 		bundle.SetLocale(test.locale)
-		suite.Equal(test.expect, RandomCellPhone(), fmt.Sprintf("case: %d", i))
+		suite.Equal(test.expect, RandomCellPhone(), fmt.Sprintf("case: %s", test.locale))
 	}
 }
 
@@ -232,207 +235,208 @@ func (suite *Suite) TestRandomPhoneNumber() {
 		},
 		{
 			locale: "zh-CN",
-			expect: "6851-46701046",
+			expect: "1684-54205516",
 		},
 		{
 			locale: "bg",
-			expect: "(117) 084-8722",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "ca-CAT",
-			expect: "938.517.012",
+			expect: "916.845.420",
 		},
 		{
 			locale: "ca",
-			expect: "423-336-6224",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "da-DK",
-			expect: "54-63-47-61",
+			expect: "16-84-54-20",
 		},
 		{
 			locale: "de-AT",
-			expect: "413568328",
+			expect: "0168454205",
 		},
 		{
 			locale: "de-CH",
-			expect: "153 020 36 55",
+			expect: "+41 16 845 42 05",
 		},
 		{
 			locale: "de",
-			expect: "(05162) 0604384",
+			expect: "(01684) 5420551",
 		},
 		{
 			locale: "ee",
-			expect: "758 7823",
+			expect: "661 6845",
 		},
 		{
 			locale: "en-au-ocker",
-			expect: "23 2166 3418",
+			expect: "+61 1 6845 4205",
 		},
 		{
 			locale: "en-AU",
-			expect: "686.631.4025",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-BORK",
-			expect: "773-527-3382 x44105",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "en-GB",
-			expect: "4117 228 6550",
+			expect: "0916 845 4205",
 		},
 		{
 			locale: "en-IND",
-			expect: "+917053806582",
+			expect: "+911684542055",
 		},
 		{
 			locale: "en-MS",
-			expect: "+60101523282",
+			expect: "+60116845420",
 		},
 		{
 			locale: "en-NEP",
-			expect: "+97753127530",
+			expect: "+977-1-6845420",
 		},
 		{
 			locale: "en-NG",
-			expect: "49081067663",
+			expect: "07016845420",
 		},
 		{
 			locale: "en-NZ",
-			expect: "24 147 4146",
+			expect: "+64 1 684 5420",
 		},
 		{
 			locale: "en-PAK",
-			expect: "4356-5457556",
+			expect: "+92 168 4542055",
 		},
 		{
 			locale: "en-SG",
-			expect: "+65 8787 2553",
+			expect: "+65 9168 4542",
 		},
 		{
 			locale: "en-UG",
-			expect: "+256 418 226 010",
+			expect: "+256 391 684 542",
 		},
 		{
 			locale: "en-ZA",
-			expect: "+2728 821 0873",
+			expect: "+2749 168 4542",
 		},
 		{
 			locale: "es",
-			expect: "968463864",
+			expect: "916.845.420",
 		},
 		{
 			locale: "fa",
-			expect: "210.070.5777 x50360",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "fi-FI",
-			expect: "825-0703543",
+			expect: "168-4542055",
 		},
 		{
 			locale: "fr-CH",
-			expect: "51 24 44 25 45",
+			expect: "+41 4 16 84 54 20",
 		},
 		{
 			locale: "fr",
-			expect: "23 36 84 80 82",
+			expect: "02 16 84 54 20",
 		},
 		{
 			locale: "he",
-			expect: "51-583-8065",
+			expect: "04-168-4542",
 		},
 		{
 			locale: "id",
-			expect: "282730746877",
+			expect: "0816-8454-2055",
 		},
 		{
 			locale: "it",
-			expect: "+11 557 28360127",
+			expect: "316 845 420",
 		},
 		{
 			locale: "ja",
-			expect: "30-7114-5688",
+			expect: "0168-45-4205",
 		},
 		{
 			locale: "ko",
-			expect: "204-2654-0865",
+			expect: "016-845-4205",
 		},
 		{
-			locale: "iv",
-			expect: "452-151-3653",
+			locale: "lv",
+			expect: "61 684 542",
 		},
 		{
 			locale: "nb-NO",
-			expect: "842 33 154",
+			expect: "16 84 54 20",
 		},
 		{
 			locale: "nl",
-			expect: "(0311) 587007",
+			expect: "1684542055",
 		},
 		{
 			locale: "no",
-			expect: "188-006-0426 x7271",
+			expect: "(168) 454-2055",
 		},
 		{
 			locale: "pl",
-			expect: "23-502-54-63",
+			expect: "82-168-45-42",
 		},
 		{
 			locale: "pt",
-			expect: "(65) 063-8007",
+			expect: "+351 (16) 845-4205",
 		},
 		{
 			locale: "ru",
-			expect: "+7(924)306-71-40",
+			expect: "+7(941)684-54-20",
 		},
 		{
 			locale: "sk",
-			expect: "+421 024 056 342",
+			expect: "016 8454 2055",
 		},
 		{
 			locale: "sv",
-			expect: "6586-785503",
+			expect: "1684-542055",
 		},
 		{
 			locale: "tr",
-			expect: "903686153453",
+			expect: "90.168.454.2055",
 		},
 		{
 			locale: "uk",
-			expect: "(050) 317-88-56",
+			expect: "(097) 168-45-42",
 		},
 		{
 			locale: "vi",
-			expect: "2914 472 2238",
+			expect: "0916 845 4205",
 		},
 		{
 			locale: "zh-TW",
-			expect: "2678-74431566",
+			expect: "1684-54205516",
 		},
 		{
 			locale: "en-CA",
-			expect: "1-780-510-5799",
+			expect: "(579) 614-8813",
 		},
 		{
 			locale: "en-US",
-			expect: "(234) 213-5835",
+			expect: "(226) 614-8813",
 		},
 		{
 			locale: "en-MX",
-			expect: "55-2076-3664",
+			expect: "433 684 5420",
 		},
 		{
 			locale: "fr-CA",
-			expect: "289-731-6994",
+			expect: "(579) 614-8813",
 		},
 		{
 			locale: "pt-BR",
-			expect: "(28) 4108-7406",
+			expect: "(64) 1088-1364",
 		},
 	}
 
 	for i, test := range tests {
+		random.Seed(1000)
 		bundle.SetLocale(test.locale)
 		suite.Equal(test.expect, RandomPhoneNumber(), fmt.Sprintf("case: %d", i))
 	}

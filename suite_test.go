@@ -3,8 +3,8 @@ package faker
 import (
 	"testing"
 
-	"github.com/zhaolion/faker/random"
 	"github.com/stretchr/testify/suite"
+	"github.com/zhaolion/faker/random"
 )
 
 // Define the suite, and absorb the built-in basic suite
