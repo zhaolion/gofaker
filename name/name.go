@@ -16,6 +16,8 @@ type FakeName struct {
 	FirstNames        []string `yaml:"first_name,flow"`
 	LastNames         []string `yaml:"last_name,flow"`
 	Prefixs           []string `yaml:"prefix,flow"`
+	MalePrefixs       []string `yaml:"male_prefix,flow"`
+	FemalePrefixs     []string `yaml:"female_prefix,flow"`
 	Suffixs           []string `yaml:"suffix,flow"`
 	Names             []string `yaml:"name,flow"`
 	NameWithMiddles   []string `yaml:"name_with_middle,flow"`
@@ -71,6 +73,16 @@ func (fn *FakeName) LastName() string {
 // Prefix prefix of name
 func (fn *FakeName) Prefix() string {
 	return random.PickString(fn.Prefixs)
+}
+
+// MalePrefix prefix of male name
+func (fn *FakeName) MalePrefix() string {
+	return random.PickString(fn.MalePrefixs)
+}
+
+// FemalePrefix prefix of female name
+func (fn *FakeName) FemalePrefix() string {
+	return random.PickString(fn.FemalePrefixs)
 }
 
 // Suffix suffix of name
