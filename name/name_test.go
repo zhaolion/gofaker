@@ -12,7 +12,11 @@ import (
 
 var bytes = []byte(`
 male_first_name: [Aaron, Abdul, Abe, Abel]
+male_middle_name: [Aaron, Abdul, Abe, Abel]
+male_last_name: [Aaron, Abdul, Abe, Abel]
 female_first_name: [Abbey, Abbie, Abby]
+female_middle_name: [Abbey, Abbie, Abby]
+female_last_name: [Abbey, Abbie, Abby]
 first_name:
   - "{{FemaleFirstName}}"
 last_name: [Abbott, Abernathy, Abshire]
@@ -45,4 +49,8 @@ func TestFakeNameFuncs(t *testing.T) {
 	assert.Equal(t, "Mrs. Abbie Abshire DDS", fakeName.Name())
 	assert.Equal(t, "Mr. Abby Abernathy Abbott", fakeName.NameWithMiddle())
 	assert.Equal(t, "Abshire", fakeName.MiddleName())
+	assert.Equal(t, "Abe", fakeName.MaleMiddleName())
+	assert.Equal(t, "Abel", fakeName.MaleLastName())
+	assert.Equal(t, "Abbie", fakeName.FemaleMiddleName())
+	assert.Equal(t, "Abbey", fakeName.FemaleLastName())
 }

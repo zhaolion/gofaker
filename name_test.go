@@ -31,6 +31,18 @@ func (suite *Suite) TestName() {
 			MaleFirstName:   "Wilford",
 			FemaleFirstName: "Carrie",
 		},
+		{
+			locale:          "bg",
+			Name:            "Кирова Мария",
+			NameWithMiddle:  "Иванка Reichel Osinski",
+			MiddleName:      "Ryan",
+			FirstName:       "Стоянка",
+			LastName:        "O'Conner",
+			Prefix:          "Mrs.",
+			Suffix:          "III",
+			MaleFirstName:   "Петър",
+			FemaleFirstName: "Румяна",
+		},
 	}
 
 	for _, test := range tests {

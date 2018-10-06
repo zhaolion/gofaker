@@ -7,14 +7,18 @@ import (
 
 // FakeName fake random name
 type FakeName struct {
-	MaleFirstNames   []string `yaml:"male_first_name,flow"`
-	FemaleFirstNames []string `yaml:"female_first_name,flow"`
-	FirstNames       []string `yaml:"first_name,flow"`
-	LastNames        []string `yaml:"last_name,flow"`
-	Prefixs          []string `yaml:"prefix,flow"`
-	Suffixs          []string `yaml:"suffix,flow"`
-	Names            []string `yaml:"name,flow"`
-	NameWithMiddles  []string `yaml:"name_with_middle,flow"`
+	MaleFirstNames    []string `yaml:"male_first_name,flow"`
+	MaleMiddleNames   []string `yaml:"male_middle_name,flow"`
+	MaleLastNames     []string `yaml:"male_last_name,flow"`
+	FemaleFirstNames  []string `yaml:"female_first_name,flow"`
+	FemaleMiddleNames []string `yaml:"female_middle_name,flow"`
+	FemaleLastNames   []string `yaml:"female_last_name,flow"`
+	FirstNames        []string `yaml:"first_name,flow"`
+	LastNames         []string `yaml:"last_name,flow"`
+	Prefixs           []string `yaml:"prefix,flow"`
+	Suffixs           []string `yaml:"suffix,flow"`
+	Names             []string `yaml:"name,flow"`
+	NameWithMiddles   []string `yaml:"name_with_middle,flow"`
 }
 
 // MaleFirstName male first name
@@ -22,9 +26,29 @@ func (fn *FakeName) MaleFirstName() string {
 	return random.PickString(fn.MaleFirstNames)
 }
 
+// MaleMiddleName male middle name
+func (fn *FakeName) MaleMiddleName() string {
+	return random.PickString(fn.MaleMiddleNames)
+}
+
+// MaleLastName male last name
+func (fn *FakeName) MaleLastName() string {
+	return random.PickString(fn.MaleLastNames)
+}
+
 // FemaleFirstName female first name
 func (fn *FakeName) FemaleFirstName() string {
 	return random.PickString(fn.FemaleFirstNames)
+}
+
+// FemaleMiddleName female middle name
+func (fn *FakeName) FemaleMiddleName() string {
+	return random.PickString(fn.FemaleMiddleNames)
+}
+
+// FemaleFirstName female last name
+func (fn *FakeName) FemaleLastName() string {
+	return random.PickString(fn.FemaleLastNames)
 }
 
 // FirstName first name
