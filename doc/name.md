@@ -18,4 +18,5 @@ faker.FemaleFirstName() => "Natasha"
 - ca-CAT
 - ca
 - da-DK
+- de-AT
 - en

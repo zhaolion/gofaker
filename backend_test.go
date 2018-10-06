@@ -5,7 +5,7 @@ func (suite *Suite) TestNewLocaleBackend() {
 	suite.Nil(err)
 	suite.NotNil(enBackend)
 
-	target, err := NewLocaleBackend("de-AT")
+	target, err := NewLocaleBackend("ca-CAT")
 	suite.Nil(err)
 	suite.NotNil(target)
 

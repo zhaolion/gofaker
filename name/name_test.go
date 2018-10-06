@@ -24,6 +24,7 @@ prefix: [Mr., Mrs., Ms., Miss, Dr.]
 male_prefix: [Mr., Mrs., Ms., Miss, Dr.]
 female_prefix: [Mr., Mrs., Ms., Miss, Dr.]
 suffix: [Jr., Sr., I, II, III, IV, V, MD, DDS, PhD, DVM]
+nobility_title_prefix: [zu, von, vom, von der]
 name:
   - "{{Prefix}} {{FirstName}} {{LastName}} {{Suffix}}"
 name_with_middle:
@@ -57,4 +58,5 @@ func TestFakeNameFuncs(t *testing.T) {
 	assert.Equal(t, "Abbey", fakeName.FemaleLastName())
 	assert.Equal(t, "Mr.", fakeName.MalePrefix())
 	assert.Equal(t, "Miss", fakeName.FemalePrefix())
+	assert.Equal(t, "zu", fakeName.NobilityTitlePrefix())
 }
