@@ -25,9 +25,6 @@ func replaceNumberWithPound(str string) string {
 			bytestr[i] = numbers[rand.Intn(9)]
 		}
 	}
-	if bytestr[0] == []byte("0")[0] {
-		bytestr[0] = numbers[rand.Intn(8)+1]
-	}
 
 	return string(bytestr)
 }

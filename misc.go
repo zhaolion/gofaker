@@ -22,8 +22,8 @@ func dataPath() string {
 }
 
 // return data file that contain random data
-func dataFilePath(name string) string {
-	return filepath.Join(dataPath(), name)
+func localeFilePath(locale string) string {
+	return filepath.Join(dataPath(), locale+".yml")
 }
 
 // return data source file name/path map
@@ -45,4 +45,14 @@ func dataFiles() map[string]string {
 	}
 
 	return files
+}
+
+func containString(list []string, target string) bool {
+	for _, l := range list {
+		if l == target {
+			return true
+		}
+	}
+
+	return false
 }

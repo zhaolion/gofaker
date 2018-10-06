@@ -24,30 +24,27 @@ func NewBundle() *Bundle {
 
 // async load backends
 func bootBackends(bundle *Bundle) {
+	enBackend, err := initDefaultBackend()
+	if err != nil {
+		log.Fatalf("init default backend from en.yml has err: %s", err)
+	}
+	bundle.defaultBackend = enBackend
+	bundle.locales = Locales
+
 	wg := sync.WaitGroup{}
-
-	files := dataFiles()
-	for name, path := range files {
+	for _, locale := range Locales {
 		wg.Add(1)
-
-		go func(name, path string, bundle *Bundle) {
+		go func(locale string, bundle *Bundle) {
 			defer wg.Done()
-			backend, err := NewBackend(path)
+			backend, err := NewLocaleBackend(locale)
 			if err == nil {
-				bundle.setBackend(name, backend)
+				bundle.setBackend(locale, backend)
 			} else {
-				log.Println(fmt.Sprintf("load backend[%s] err: %s", name, err))
+				log.Println(fmt.Sprintf("load backend[%s] err: %s", locale, err))
 			}
-		}(name, path, bundle)
+		}(locale, bundle)
 	}
-
 	wg.Wait()
-
-	for locale := range files {
-		bundle.locales = append(bundle.locales, locale)
-	}
-
-	bundle.defaultBackend = bundle.backends["en"]
 }
 
 func currentBackend() *Backend {
