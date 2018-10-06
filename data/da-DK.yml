@@ -8,3 +8,11 @@ fake_phone:
       - '20 ## ## ##'
       - '30 ## ## ##'
       - '40 ## ## ##'
+
+fake_name:
+  first_name: [Peter, Jens, Lars, Michael, Henrik, Thomas, Søren, Jan, Christian, Niels, Anne, Kirsten, Hanne, Mette, Anna, Helle, Susanne, Lene, Maria, Marianne]
+  last_name: [Nielsen, Jensen, Hansen, Pedersen, Andersen, Christensen, Larsen, Sørensen, Rasmussen, Jørgensen]
+  prefix: ["Dr.", "Prof.", "Cand.mag.", "Cand.jur."]
+  name:
+    - "{{FirstName}} {{LastName}}"
+    - "{{Prefix}} {{FirstName}} {{LastName}}"
