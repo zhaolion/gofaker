@@ -13,4 +13,4 @@ fmt:
 lint:
 	./scripts/pre-commit.sh
 
-ci: dep fmt lint test
+ci: dep fmt lint race

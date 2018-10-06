@@ -44,4 +44,5 @@ func TestFakeNameFuncs(t *testing.T) {
 	assert.Equal(t, "Abbie", fakeName.FirstName())
 	assert.Equal(t, "Mrs. Abbie Abshire DDS", fakeName.Name())
 	assert.Equal(t, "Mr. Abby Abernathy Abbott", fakeName.NameWithMiddle())
+	assert.Equal(t, "Abshire", fakeName.MiddleName())
 }

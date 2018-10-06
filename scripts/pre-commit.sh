@@ -20,7 +20,7 @@ fi
 
 if [ -z "${NOTEST}" ]; then
   printf >&2 'Running short tests...\n'
-  env AMQP_URL= go test -short -v | egrep 'PASS|ok'
+  make test | egrep 'PASS|ok'
 
   if [ $? -ne 0 ]; then
     printf >&2 'go test failed, please fix before committing.\n'

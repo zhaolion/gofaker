@@ -33,6 +33,11 @@ func (fn *FakeName) FirstName() string {
 	return random.Numerify(mustache.Render(name, fn))
 }
 
+// MiddleName middle name
+func (fn *FakeName) MiddleName() string {
+	return fn.LastName()
+}
+
 // LastName last name
 func (fn *FakeName) LastName() string {
 	name := random.PickString(fn.LastNames)
