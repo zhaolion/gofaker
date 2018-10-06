@@ -49,7 +49,7 @@ func (fn *FakeName) FemaleMiddleName() string {
 	return random.PickString(fn.FemaleMiddleNames)
 }
 
-// FemaleFirstName female last name
+// FemaleLastName female last name
 func (fn *FakeName) FemaleLastName() string {
 	return random.PickString(fn.FemaleLastNames)
 }
@@ -103,7 +103,7 @@ func (fn *FakeName) NameWithMiddle() string {
 	return random.Numerify(mustache.Render(name, fn))
 }
 
-// NobilityTitlePrefixs nobility_title_prefix
+// NobilityTitlePrefix  nobility_title_prefix
 func (fn *FakeName) NobilityTitlePrefix() string {
 	return random.PickString(fn.NobilityTitlePrefixs)
 }
