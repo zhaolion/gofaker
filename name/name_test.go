@@ -32,6 +32,8 @@ malay_female_first_name: [Siti, Aminah, Aiza]
 chinese_male_first_name: [Jin Quan, Wen Jun, Jun Jie]
 chinese_male_last_name: [Tan, Lim, Lee, Ng, Ong, Wong]
 chinese_female_first_name: [Xiu Yi, Wai Teng, Sing Yee]
+male_english_name: [Leon, Bryan, Jack, Stephen, Andy]
+female_english_name: [Alicia, Caitlin, Denise, Emerald]
 name:
   - "{{Prefix}} {{FirstName}} {{LastName}} {{Suffix}}"
 name_with_middle:
@@ -73,4 +75,6 @@ func TestFakeNameFuncs(t *testing.T) {
 	assert.Equal(t, "Wen Jun", fakeName.ChineseMaleFirstName())
 	assert.Equal(t, "Lim", fakeName.ChineseMaleLastName())
 	assert.Equal(t, "Wai Teng", fakeName.ChineseFemaleFirstName())
+	assert.Equal(t, "Leon", fakeName.MaleEnglishName())
+	assert.Equal(t, "Emerald", fakeName.FemaleEnglishName())
 }

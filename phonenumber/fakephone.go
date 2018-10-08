@@ -70,12 +70,12 @@ func (p *FakePhone) FixedSubscriberNumber(l uint) string {
 	return random.FixedNumeric(l)
 }
 
-// LadaDos random lada_dos only for en-MX
+// LadaDos random lada_dos only for es-MX
 func (p *FakePhone) LadaDos() string {
 	return random.PickString(p.LadaDoses)
 }
 
-// LadaTres random lada_tres only for en-MX
+// LadaTres random lada_tres only for es-MX
 func (p *FakePhone) LadaTres() string {
 	return random.PickString(p.LadaTress)
 }

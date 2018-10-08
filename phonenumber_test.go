@@ -204,7 +204,7 @@ func (suite *Suite) TestRandomCellPhone() {
 			expect: "(226) 614-8813",
 		},
 		{
-			locale: "en-MX",
+			locale: "es-MX",
 			expect: "433 684 5420",
 		},
 		{
@@ -422,7 +422,7 @@ func (suite *Suite) TestRandomPhoneNumber() {
 			expect: "(226) 614-8813",
 		},
 		{
-			locale: "en-MX",
+			locale: "es-MX",
 			expect: "433 684 5420",
 		},
 		{
