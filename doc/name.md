@@ -33,3 +33,5 @@ faker.FemaleFirstName() => "Natasha"
 - en-NG
 - en-NZ
 - en-PAK
+- en-SG
+- en-UG

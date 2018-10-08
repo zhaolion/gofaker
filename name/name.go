@@ -29,6 +29,8 @@ type FakeName struct {
 	ChineseMaleFirstNames   []string `yaml:"chinese_male_first_name,flow"`
 	ChineseMaleLastNames    []string `yaml:"chinese_male_last_name,flow"`
 	ChineseFemaleFirstNames []string `yaml:"chinese_female_first_name,flow"`
+	MaleEnglishNames        []string `yaml:"male_english_name,flow"`
+	FemaleEnglishNames      []string `yaml:"female_english_name,flow"`
 }
 
 // MaleFirstName male first name
@@ -148,4 +150,14 @@ func (fn *FakeName) ChineseMaleLastName() string {
 // ChineseFemaleFirstName  chinese_female_first_name
 func (fn *FakeName) ChineseFemaleFirstName() string {
 	return random.PickString(fn.ChineseFemaleFirstNames)
+}
+
+// MaleEnglishName  male_english_name
+func (fn *FakeName) MaleEnglishName() string {
+	return random.PickString(fn.MaleEnglishNames)
+}
+
+// FemaleEnglishName  female_english_name
+func (fn *FakeName) FemaleEnglishName() string {
+	return random.PickString(fn.FemaleEnglishNames)
 }
