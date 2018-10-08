@@ -58,8 +58,8 @@ func LastName() string {
 	return FakeName().LastName()
 }
 
-// Prefix prefix of name
-func Prefix() string {
+// PrefixName prefix of name
+func PrefixName() string {
 	if FakeName() == nil {
 		return ""
 	}
@@ -67,8 +67,8 @@ func Prefix() string {
 	return FakeName().Prefix()
 }
 
-// Suffix suffix of name
-func Suffix() string {
+// SuffixName suffix of name
+func SuffixName() string {
 	if FakeName() == nil {
 		return ""
 	}
