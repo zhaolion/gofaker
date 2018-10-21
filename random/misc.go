@@ -12,17 +12,30 @@ func rangeInt(min, max int) int {
 	return rand.Intn((max+1)-min) + min
 }
 
-// replaceNumberWithPound Replace # with numbers
+// replaceNumberWithPound Replace # with number
 func replaceNumberWithPound(str string) string {
 	if str == "" {
 		return str
 	}
 	bytestr := []byte(str)
-	hashtag := []byte("#")[0]
-	numbers := []byte("0123456789")
 	for i := 0; i < len(bytestr); i++ {
-		if bytestr[i] == hashtag {
-			bytestr[i] = numbers[rand.Intn(9)]
+		if bytestr[i] == poundTag {
+			bytestr[i] = numberStringBytes[rand.Intn(9)]
+		}
+	}
+
+	return string(bytestr)
+}
+
+// replaceLetterWithQuestionMark Replace ? with letter
+func replaceLetterWithQuestionMark(str string) string {
+	if str == "" {
+		return str
+	}
+	bytestr := []byte(str)
+	for i := 0; i < len(bytestr); i++ {
+		if bytestr[i] == quetionMarkTag {
+			bytestr[i] = letterStringBytes[rand.Intn(26)]
 		}
 	}
 
