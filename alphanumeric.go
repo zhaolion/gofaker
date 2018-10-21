@@ -1,6 +1,6 @@
 package faker
 
-import "github.com/zhaolion/faker/random"
+import "github.com/zhaolion/gofaker/random"
 
 // Alphanumeric string(mixed alpha with number) of fixed length
 func Alphanumeric(l uint) string {

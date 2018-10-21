@@ -2,7 +2,7 @@ package name
 
 import (
 	"github.com/hoisie/mustache"
-	"github.com/zhaolion/faker/random"
+	"github.com/zhaolion/gofaker/random"
 )
 
 // FakeName fake random name
@@ -31,6 +31,9 @@ type FakeName struct {
 	ChineseFemaleFirstNames []string `yaml:"chinese_female_first_name,flow"`
 	MaleEnglishNames        []string `yaml:"male_english_name,flow"`
 	FemaleEnglishNames      []string `yaml:"female_english_name,flow"`
+	FeminineNames           []string `yaml:"feminine_name,flow"`
+	MasculineNames          []string `yaml:"masculine_name,flow"`
+	Tussenvoegsels          []string `yaml:"tussenvoegsel,flow"`
 }
 
 // MaleFirstName male first name
@@ -160,4 +163,19 @@ func (fn *FakeName) MaleEnglishName() string {
 // FemaleEnglishName  female_english_name
 func (fn *FakeName) FemaleEnglishName() string {
 	return random.PickString(fn.FemaleEnglishNames)
+}
+
+// FeminineName  feminine_name
+func (fn *FakeName) FeminineName() string {
+	return random.PickString(fn.FeminineNames)
+}
+
+// MasculineName  masculine_name
+func (fn *FakeName) MasculineName() string {
+	return random.PickString(fn.MasculineNames)
+}
+
+// Tussenvoegsel  tussenvoegsel
+func (fn *FakeName) Tussenvoegsel() string {
+	return random.PickString(fn.Tussenvoegsels)
 }

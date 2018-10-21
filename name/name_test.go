@@ -1,12 +1,11 @@
 package name
 
 import (
+	"log"
 	"testing"
 
-	"log"
-
 	"github.com/stretchr/testify/assert"
-	"github.com/zhaolion/faker/random"
+	"github.com/zhaolion/gofaker/random"
 	"gopkg.in/yaml.v2"
 )
 
@@ -34,6 +33,9 @@ chinese_male_last_name: [Tan, Lim, Lee, Ng, Ong, Wong]
 chinese_female_first_name: [Xiu Yi, Wai Teng, Sing Yee]
 male_english_name: [Leon, Bryan, Jack, Stephen, Andy]
 female_english_name: [Alicia, Caitlin, Denise, Emerald]
+feminine_name: ["Emma", "Sara", "Thea", "Ida"]
+masculine_name: ["Markus", "Mathias", "Kristian"]
+tussenvoegsel: ["van", "van de", "van den"]
 name:
   - "{{Prefix}} {{FirstName}} {{LastName}} {{Suffix}}"
 name_with_middle:
@@ -77,4 +79,7 @@ func TestFakeNameFuncs(t *testing.T) {
 	assert.Equal(t, "Wai Teng", fakeName.ChineseFemaleFirstName())
 	assert.Equal(t, "Leon", fakeName.MaleEnglishName())
 	assert.Equal(t, "Emerald", fakeName.FemaleEnglishName())
+	assert.Equal(t, "Ida", fakeName.FeminineName())
+	assert.Equal(t, "Kristian", fakeName.MasculineName())
+	assert.Equal(t, "van de", fakeName.Tussenvoegsel())
 }

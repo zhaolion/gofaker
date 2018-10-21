@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/zhaolion/faker"
+	"github.com/zhaolion/gofaker"
 )
 
 func main() {

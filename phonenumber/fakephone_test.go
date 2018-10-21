@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/zhaolion/faker/random"
+	"github.com/zhaolion/gofaker/random"
 	"gopkg.in/yaml.v2"
 )
 

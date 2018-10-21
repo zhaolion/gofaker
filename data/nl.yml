@@ -3,3 +3,16 @@ fake_phone:
     formats: ["(####) ######", "##########", "06########", "06 #### ####"]
   cell_phone:
     formats: ['###-###-####', '(###) ###-####', '1-###-###-####', '###.###.####']
+fake_name:
+  first_name: ["Aad", "Aafje", "Aagje", "Aalbert", "Abdelouahab", "Abdul", "Aart", "Amber", "Anna", "Anne", "Anouk", "Arie", "Bard", "Bas", "Bastiaan", "Bauke", "Beau", "Bella", "Bram", "Britt", "Bob", "Caspar", "Caterina", "Catharina", "Daan", "Daniël", "Dani", "Daphne", "Dick", "Emma", "Eva", "Femke", "Finn", "Fleur", "Henk", "Iris", "Isa", "Jan", "Jasper", "Jayden", "Jens", "Jesse", "Johannes", "Julia", "Julian", "Kevin", "Lars", "Lieke", "Lisa", "Lotte", "Lucas", "Luuk", "Maud", "Max", "Mike", "Milan", "Nick", "Niels", "Noa", "Pascal", "Rick", "Roos", "Ruben", "Sander", "Sanne", "Sem", "Sophie", "Stijn", "Sven", "Tessa", "Thijs", "Thijs", "Thomas", "Tim", "Tom", "Tamara", "Tanja", "Tariq", "Tes", "Timo", "Veerle", "Vera", "Viktor", "Walid", "Walter", "Welmoed"]
+  tussenvoegsel: ["van", "van de", "van den", "van 't", "van het", "de", "den"]
+  last_name:  ["Bakker", "Beek", "Berg", "Boer", "Bos", "Bosch", "Brink", "Broek", "Brouwer", "Bruin", "Dam", "Dekker", "Dijk", "Dijkstra", "Graaf", "Groot", "Haan", "Hendriks", "Heuvel", "Hoek", "Jacobs", "Jansen", "Janssen", "Jong", "Klein", "Kok", "Koning", "Koster", "Leeuwen", "Linden", "Maas", "Meer", "Meijer", "Mulder", "Peters", "Ruiter", "Schouten", "Smit", "Smits", "Stichting", "Veen", "Ven", "Vermeulen", "Visser", "Vliet", "Vos", "Vries", "Wal", "Willems", "Wit"]
+  prefix: [Dhr., Mevr. Dr., Bsc, Msc, Prof.]
+  suffix: [Jr., Sr., I, II, III, IV, V]
+  name:
+    - "{{Prefix}} {{FirstName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{Suffix}}"
+    - "{{FirstName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}}"
+    - "{{FirstName}} {{Tussenvoegsel}} {{LastName}}"
+    - "{{FirstName}} {{Tussenvoegsel}} {{LastName}}"
