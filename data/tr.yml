@@ -3,3 +3,17 @@ fake_phone:
     formats: ["90-###-###-####", "90.###.###.####", "90 ### ### ####", "90##########"]
   cell_phone:
     formats: ['###-###-####', '(###) ###-####', '1-###-###-####', '###.###.####']
+fake_name:
+  first_name: [Mehmet, Yiğit, Batuhan, Burak, İrem, Buse, Selim, Caner]
+  last_name: [Davut, Sağdıç, Özdemir, Özkanlı, Ekkaldır, Zengel, Eren]
+  prefix: [Sn., Av., Dr.]
+  name:
+    - "{{Prefix}} {{FirstName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}}"
+    - "{{LastName}} {{FirstName}}"
+  name_with_middle:
+    - "{{Prefix}} {{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}" 

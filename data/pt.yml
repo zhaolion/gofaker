@@ -3,3 +3,15 @@ fake_phone:
     formats: ["(##) ###-####", "+351 (##) ###-####", "884 ###-###"]
   cell_phone:
     formats: ['###-###-####', '(###) ###-####', '1-###-###-####', '###.###.####']
+fake_name:
+  first_name: ["Águeda", "Amélia", "Ângela", "Alessandro", "Alessandra", "Alexandre", "Aline", "Antônio", "Breno", "Bruna", "Carlos", "Carla", "Célia", "Cecília", "César", "Danilo", "Dalila", "Deneval", "Eduardo", "Eduarda", "Esther", "Elísio", "Fábio", "Fabrício", "Fabrícia", "Félix", "Felícia", "Feliciano", "Frederico", "Fabiano", "Gustavo", "Guilherme", "Gúbio", "Heitor", "Hélio", "Hugo", "Isabel", "Isabela", "Ígor", "João", "Joana", "Júlio César", "Júlio", "Júlia", "Janaína", "Karla", "Kléber", "Lucas", "Lorena", "Lorraine", "Larissa", "Ladislau", "Marcos", "Meire", "Marcelo", "Marcela", "Margarida", "Mércia", "Márcia", "Marli", "Morgana", "Maria", "Norberto", "Natália", "Nataniel", "Núbia", "Ofélia", "Paulo", "Paula", "Pablo", "Pedro", "Raul", "Rafael", "Rafaela", "Ricardo", "Roberto", "Roberta", "Sílvia", "Sílvia", "Silas", "Suélen", "Sara", "Salvador", "Sirineu", "Talita", "Tertuliano", "Vicente", "Víctor", "Vitória", "Yango", "Yago", "Yuri", "Washington", "Warley"]
+  last_name: ["Araújo", "D'cruze", "Estéves", "Silva", "Souza", "Carvalho", "Santos", "Reis", "Xavier", "Franco", "Braga", "Macedo", "Batista", "Barros", "Moraes", "Costa", "Pereira", "Carvalho", "Melo", "Saraiva", "Nogueira", "Oliveira", "Martins", "Moreira", "Albuquerque"]
+  prefix: ["Sr.", "Sra.", "Srta.", "Dr."]
+  suffix: ["Jr.", "Neto", "Filho"]
+  name_with_middle:
+    - "{{Prefix}} {{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}} {{Suffix}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}"
+    - "{{FirstName}} {{LastName}} {{LastName}}"  

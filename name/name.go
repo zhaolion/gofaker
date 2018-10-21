@@ -34,6 +34,8 @@ type FakeName struct {
 	FeminineNames           []string `yaml:"feminine_name,flow"`
 	MasculineNames          []string `yaml:"masculine_name,flow"`
 	Tussenvoegsels          []string `yaml:"tussenvoegsel,flow"`
+	ManLastNames            []string `yaml:"man_last_name,flow"`
+	WomanLastNames          []string `yaml:"woman_last_name,flow"`
 }
 
 // MaleFirstName male first name
@@ -178,4 +180,14 @@ func (fn *FakeName) MasculineName() string {
 // Tussenvoegsel  tussenvoegsel
 func (fn *FakeName) Tussenvoegsel() string {
 	return random.PickString(fn.Tussenvoegsels)
+}
+
+// ManLastName  man_last_name
+func (fn *FakeName) ManLastName() string {
+	return random.PickString(fn.ManLastNames)
+}
+
+// WomanLastName  woman_last_name
+func (fn *FakeName) WomanLastName() string {
+	return random.PickString(fn.WomanLastNames)
 }
