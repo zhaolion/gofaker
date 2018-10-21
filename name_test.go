@@ -3,7 +3,7 @@ package faker
 import (
 	"fmt"
 
-	"github.com/zhaolion/faker/random"
+	"github.com/zhaolion/gofaker/random"
 )
 
 func (suite *Suite) TestName() {

@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/zhaolion/faker.svg?branch=master)](https://travis-ci.org/zhaolion/faker)[![GoDoc](https://godoc.org/github.com/zhaolion/faker?status.svg)](https://godoc.org/github.com/zhaolion/faker)
+[![Build Status](https://travis-ci.org/zhaolion/gofaker.svg?branch=master)](https://travis-ci.org/zhaolion/gofaker)[![GoDoc](https://godoc.org/github.com/zhaolion/gofaker?status.svg)](https://godoc.org/github.com/zhaolion/gofaker)
 # faker
 
 faker(inspired by ruby gem faker) is a useful tool for generating data. 
@@ -10,7 +10,7 @@ faker(inspired by ruby gem faker) is a useful tool for generating data.
 
 
 ## Installation
-`go get github.com/zhaolion/faker`
+`go get github.com/zhaolion/gofaker`
 
 ## Demo:
 
@@ -20,7 +20,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/zhaolion/faker"
+	"github.com/zhaolion/gofaker"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-package: github.com/zhaolion/faker
+package: github.com/zhaolion/gofaker
 import:
 - package: gopkg.in/yaml.v2
   version: ^2.2.1

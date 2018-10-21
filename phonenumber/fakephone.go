@@ -2,7 +2,7 @@ package phonenumber
 
 import (
 	"github.com/hoisie/mustache"
-	"github.com/zhaolion/faker/random"
+	"github.com/zhaolion/gofaker/random"
 )
 
 // FakePhone a random phone

@@ -1,7 +1,7 @@
 package faker
 
 import (
-	"github.com/zhaolion/faker/name"
+	"github.com/zhaolion/gofaker/name"
 )
 
 // FakeName return fake name

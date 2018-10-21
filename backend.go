@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/jinzhu/copier"
-	"github.com/zhaolion/faker/name"
-	"github.com/zhaolion/faker/phonenumber"
+	"github.com/zhaolion/gofaker/name"
+	"github.com/zhaolion/gofaker/phonenumber"
 	"gopkg.in/yaml.v2"
 )
 

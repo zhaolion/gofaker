@@ -2,7 +2,7 @@ package name
 
 import (
 	"github.com/hoisie/mustache"
-	"github.com/zhaolion/faker/random"
+	"github.com/zhaolion/gofaker/random"
 )
 
 // FakeName fake random name
