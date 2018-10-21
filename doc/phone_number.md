@@ -15,28 +15,28 @@ Phone numbers may be in any of the following formats:
 ## Examples
 
 ```
-faker.RandomCellPhone() => "(168) 454-2055"
-faker.RandomPhoneNumber() => "397.693.1309"
+gofaker.RandomCellPhone() => "(168) 454-2055"
+gofaker.RandomPhoneNumber() => "397.693.1309"
 
 // For Canada
-faker.SetLocale("en-CA")
+gofaker.SetLocale("en-CA")
 
 // For the 'US only' methods below, first you must do the following:
-faker.SetLocale("en-US")
+gofaker.SetLocale("en-US")
 
 // US only
-faker.Phone().AreaCode() => "201"
+gofaker.Phone().AreaCode() => "201"
 
 // US only
-faker.Phone().ExchangeCode() => "208"
+gofaker.Phone().ExchangeCode() => "208"
 
 // length=4
-faker.Phone().SubscriberNumber() => "3873"
+gofaker.Phone().SubscriberNumber() => "3873"
 
 // Optional parameter: length=2
-faker.Phone().FixedSubscriberNumber(2) => "39"
+gofaker.Phone().FixedSubscriberNumber(2) => "39"
 
-faker.Phone().Extention() => "3764"
+gofaker.Phone().Extention() => "3764"
 ```
 
 ## support locales

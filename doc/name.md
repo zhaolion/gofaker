@@ -1,15 +1,15 @@
 # Name
 
 ```
-faker.Name() => "Tyshawn Johns Sr."
-faker.NameWithMiddle() => "Aditya Elton Douglas"
-faker.FirstName() => "Aditya"
-faker.MiddleName() => "Abraham"
-faker.LastName() => "Ernser"
-faker.Prefix() => "Mrs."
-faker.Suffix() => "IV"
-faker.MaleFirstName() => "Edward"
-faker.FemaleFirstName() => "Natasha"
+gofaker.Name() => "Tyshawn Johns Sr."
+gofaker.NameWithMiddle() => "Aditya Elton Douglas"
+gofaker.FirstName() => "Aditya"
+gofaker.MiddleName() => "Abraham"
+gofaker.LastName() => "Ernser"
+gofaker.Prefix() => "Mrs."
+gofaker.Suffix() => "IV"
+gofaker.MaleFirstName() => "Edward"
+gofaker.FemaleFirstName() => "Natasha"
 ```
 
 ## support locales

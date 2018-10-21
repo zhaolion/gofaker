@@ -27,7 +27,7 @@ import (
 )
 
 func main() {
-	faker.SetLocale("zh-CN")
+	gofaker.SetLocale("zh-CN")
 	fmt.Println(gofaker.RandomCellPhone())
 }
 ```
