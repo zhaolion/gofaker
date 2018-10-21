@@ -6,6 +6,7 @@ gofaker(inspired by ruby gem faker) is a useful tool for generating data.
 **go version: 1.9+**
 
 ## Usages
+- [Address](doc/address.md)
 - [Alphanumeric](doc/alphanumeric.md)
 - [Boolean](doc/boolean.md)
 - [Name](doc/name.md)

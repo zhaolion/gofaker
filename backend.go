@@ -3,9 +3,11 @@ package gofaker
 import (
 	"fmt"
 	"io/ioutil"
+	"log"
 	"os"
 
 	"github.com/jinzhu/copier"
+	"github.com/zhaolion/gofaker/address"
 	"github.com/zhaolion/gofaker/name"
 	"github.com/zhaolion/gofaker/phonenumber"
 	"gopkg.in/yaml.v2"
@@ -13,8 +15,9 @@ import (
 
 // Backend of random base data
 type Backend struct {
-	Phone *phonenumber.FakePhone `yaml:"fake_phone"`
-	Name  *name.FakeName         `yaml:"fake_name"`
+	Phone   *phonenumber.FakePhone `yaml:"fake_phone"`
+	Name    *name.FakeName         `yaml:"fake_name"`
+	Address *address.FakeAddress   `yaml:"fake_address"`
 }
 
 // NewLocaleBackend init backend from locale file
@@ -42,28 +45,18 @@ func initBackend(filename string, en Backend) (*Backend, error) {
 }
 
 func initDefaultBackend() (*Backend, error) {
-	return newBackend(localeFilePath("en"))
-}
-
-// newBackend unmarshal backend from file
-func newBackend(filename string) (*Backend, error) {
-	file, err := os.Open(filename)
-	if err != nil {
+	backend := &Backend{}
+	if err := unmarshalBackend(localeFilePath("en"), backend); err != nil {
 		return nil, err
 	}
 
-	bs, err := ioutil.ReadAll(file)
-	if err != nil {
-		return nil, err
+	if backend.Name == nil {
+		log.Fatal("default backend name should not be nil")
 	}
 
-	var backend Backend
-	err = yaml.Unmarshal(bs, &backend)
-	if err != nil {
-		return nil, err
-	}
+	backend.Address.SetFakeName(backend.Name)
 
-	return &backend, nil
+	return backend, nil
 }
 
 func unmarshalBackend(filename string, bak *Backend) error {
