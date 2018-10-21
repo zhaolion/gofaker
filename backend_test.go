@@ -1,7 +1,7 @@
 package gofaker
 
 func (suite *Suite) TestNewLocaleBackend() {
-	enBackend, err := newBackend(localeFilePath("en"))
+	enBackend, err := initDefaultBackend()
 	suite.Nil(err)
 	suite.NotNil(enBackend)
 

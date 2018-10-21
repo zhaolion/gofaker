@@ -40,6 +40,13 @@ func NewFakeAddress(name *name.FakeName) *FakeAddress {
 	}
 }
 
+// SetFakeName set FakeName for random name data
+func (fa *FakeAddress) SetFakeName(name *name.FakeName) {
+	if name != nil {
+		fa.name = name
+	}
+}
+
 // RandomFirstName random name.FirstName
 // inner render func
 func (fa *FakeAddress) RandomFirstName() string {
