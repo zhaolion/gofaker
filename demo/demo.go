@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	faker.SetLocale("zh-CN")
-	fmt.Printf("RandomCellPhone: %s\n", faker.RandomCellPhone())
+	gofaker.SetLocale("zh-CN")
+	fmt.Printf("RandomCellPhone: %s\n", gofaker.RandomCellPhone())
 }

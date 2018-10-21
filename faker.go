@@ -1,4 +1,4 @@
-package faker
+package gofaker
 
 // SetLocale of bundle
 func SetLocale(l string) {

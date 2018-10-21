@@ -7,4 +7,3 @@ import:
 - package: github.com/hoisie/mustache
   version: 6375acf62c69d9d3ad20fd0599d82ca94ea12284
 - package: github.com/jinzhu/copier
-

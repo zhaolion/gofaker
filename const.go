@@ -1,4 +1,4 @@
-package faker
+package gofaker
 
 // Locales all support locale
 var Locales = []string{

@@ -1,5 +1,5 @@
 # Alphanumeric
 
-- `faker.Alphanumeric(4) => "3vXf"`
-- `faker.Alpha(4) => "Mfxv"`
-- `faker.Numberic(4) => "1993"`
+- `gofaker.Alphanumeric(4) => "3vXf"`
+- `gofaker.Alpha(4) => "Mfxv"`
+- `gofaker.Numberic(4) => "1993"`

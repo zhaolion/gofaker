@@ -1,4 +1,4 @@
-package faker
+package gofaker
 
 func (suite *Suite) TestSetLocale() {
 	SetLocale("zh-CN")

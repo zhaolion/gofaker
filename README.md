@@ -7,6 +7,7 @@ gofaker(inspired by ruby gem faker) is a useful tool for generating data.
 
 ## Usages
 - [Alphanumeric](doc/alphanumeric.md)
+- [Boolean](doc/boolean.md)
 - [Name](doc/name.md)
 - [PhoneNumber](doc/phone_number.md)
 
@@ -26,7 +27,7 @@ import (
 )
 
 func main() {
-	faker.SetLocale("zh-CN")
+	gofaker.SetLocale("zh-CN")
 	fmt.Println(gofaker.RandomCellPhone())
 }
 ```
