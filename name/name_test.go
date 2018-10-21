@@ -36,6 +36,8 @@ female_english_name: [Alicia, Caitlin, Denise, Emerald]
 feminine_name: ["Emma", "Sara", "Thea", "Ida"]
 masculine_name: ["Markus", "Mathias", "Kristian"]
 tussenvoegsel: ["van", "van de", "van den"]
+man_last_name: [Antal, Babka, Bahna]
+woman_last_name: [Antalová, Babková, Bahnová]
 name:
   - "{{Prefix}} {{FirstName}} {{LastName}} {{Suffix}}"
 name_with_middle:
@@ -82,4 +84,6 @@ func TestFakeNameFuncs(t *testing.T) {
 	assert.Equal(t, "Ida", fakeName.FeminineName())
 	assert.Equal(t, "Kristian", fakeName.MasculineName())
 	assert.Equal(t, "van de", fakeName.Tussenvoegsel())
+	assert.Equal(t, "Bahna", fakeName.ManLastName())
+	assert.Equal(t, "Bahnová", fakeName.WomanLastName())
 }
