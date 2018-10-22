@@ -2,5 +2,5 @@
 
 ```
 // ratio is 0.5
-gofaker.Boolean()
+gofaker.Boolean() => true
 ```
