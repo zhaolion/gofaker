@@ -1,22 +1,22 @@
 # Address
 
 ```
-gofaker.City()
-gofaker.StreetName()
-gofaker.StreetAddress()
-gofaker.SecondaryAddress()
-gofaker.BuildingNumber()
-gofaker.Community()
-gofaker.Postcode()
-gofaker.ZipCode()
-gofaker.TimeZone()
-gofaker.StreetSuffix()
-gofaker.CitySuffix()
-gofaker.CityPrefix()
-gofaker.State()
-gofaker.StateAbbr()
-gofaker.Country()
-gofaker.CountryCode()
-gofaker.CountryLongCode()
-gofaker.FullAddress()
+gofaker.City()                  => "North Ermelinda"
+gofaker.StreetName()            => "Rodger Forges"
+gofaker.StreetAddress()         => "55168 Dave Burg"
+gofaker.SecondaryAddress()      => "Suite 010"
+gofaker.BuildingNumber()        => "6711"
+gofaker.Community()             => "University Village"
+gofaker.Postcode()              => "48722-7385"
+gofaker.ZipCode()               => "70123-4233"
+gofaker.TimeZone()              => "Asia/Novosibirsk"
+gofaker.StreetSuffix()          => "Flats"
+gofaker.CitySuffix()            => "land"
+gofaker.CityPrefix()            => "East"
+gofaker.State()                 => "Arkansas"
+gofaker.StateAbbr()             => "NC"
+gofaker.Country()               => "Greenland"
+gofaker.CountryCode()           => "MG"
+gofaker.CountryLongCode()       => "ALA"
+gofaker.FullAddress()           => "Apt. 476 3356 Exie Dam, Crooksside, PA 20365"
 ```
